@@ -59,6 +59,7 @@ namespace ChangeRequestAPI.Controllers
             existing.Description = changeRequest.Description;
             existing.Priority = changeRequest.Priority;
             existing.Category = changeRequest.Category;
+            existing.Status = changeRequest.Status;
 
             await _context.SaveChangesAsync();
 
